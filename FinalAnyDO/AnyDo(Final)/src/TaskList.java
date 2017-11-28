@@ -5,13 +5,15 @@ import java.util.*;
 
 public class TaskList {
 	
+	public static String taskChoice;
+	
 	public static void main(String args) throws IOException {
 		
 		Home home = new Home();
 		Login login = new Login();
 		TaskInfo taskInfo = new TaskInfo();
 		
-		String taskChoice;
+
 		//Create list to hold all listNames
 		List<String> listTasks = new ArrayList<String>();
 		
@@ -75,7 +77,7 @@ public class TaskList {
 				printWriter.println(newTask);
 				listTasks.add(newTask);
 				System.out.println("new task has been added");
-				System.out.println("To Add another task enter 'Add' or select a task to view, or exit");
+				System.out.println("To Add another task enter 'Add' or select a task to view, or exit to return home");
 				System.out.println(listTasks);
 			}
 			/*if(ListChoice.equals("Delete")) {
@@ -99,5 +101,11 @@ public class TaskList {
 				taskInfo.main(null);
 			}
 		}
+		home.main(null);
 	}
+	
+	public String taskChoice() {
+		return taskChoice;
+	}
+	
 }
