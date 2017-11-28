@@ -12,12 +12,14 @@ public class Login{
     	
     	Scanner s1,s2;											//s1-Read , s2-Input
     	File temp = new File("src/userlogs.txt");
-    	
+    	System.out.println("----------------------------------------------------------------------");
+    	System.out.println("Login Page");
+    	System.out.println("----------------------------------------------------------------------");
     	if(temp.exists()==false) {
         	temp.createNewFile();
-        	System.out.println("File has been created");
+        	//System.out.println("File has been created");
         }
-        else { System.out.println("File userlogs exists"); }
+        else { /*System.out.println("File userlogs exists");*/ }
     	
         s1=new Scanner(temp);									// Read UserLog
         s2=new Scanner(System.in);

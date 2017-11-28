@@ -17,7 +17,9 @@ public class TaskList {
 		//Create list to hold all listNames
 		List<String> listTasks = new ArrayList<String>();
 		
+		System.out.println("----------------------------------------------------------------------");
 		System.out.println("Welcome "+login.Username()+" to "+home.ListChoice()+" task list");
+		System.out.println("----------------------------------------------------------------------");
 		//create file for listChoice to store data.
 		// Create File With UsernameList as name
 		File userInfo = new File("src/" + login.Username() + home.ListChoice() + ".txt");

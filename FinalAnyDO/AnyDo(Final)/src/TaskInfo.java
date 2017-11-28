@@ -21,7 +21,9 @@ public class TaskInfo {
 		List<String> listTaskInfo = new ArrayList<String>();
 		
 		// welcome user to task info
+		System.out.println("----------------------------------------------------------------------");
 		System.out.println("Welcome "+login.Username()+" to "+taskListInfo.taskChoice()+" task info");
+		System.out.println("----------------------------------------------------------------------");
 		
 		//create file for listChoice to store data.
 		// Create File With UsernameList as name

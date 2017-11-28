@@ -10,7 +10,11 @@ public class Register {
 	        
 	    	Scanner s1,s2, s3;											//s1-Read for initial print, s2-Input, s3-Read for final print
 	    	File temp = new File("src/userlogs.txt");
-	        
+	    	
+	    	System.out.println("----------------------------------------------------------------------");
+	    	System.out.println("Registration Page");
+	    	System.out.println("----------------------------------------------------------------------");
+	    	
 	        if(temp.exists()==false) {
 	        	temp.createNewFile();
 	        	System.out.println("File has been created");
@@ -64,7 +68,7 @@ public class Register {
 	        		}
 	        		
 	        }
-	        System.out.println("File printed");
+	        //System.out.println("File printed");
 	        printWriter.flush();
 	        printWriter.close();
 	 }

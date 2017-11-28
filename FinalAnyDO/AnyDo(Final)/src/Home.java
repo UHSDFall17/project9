@@ -55,7 +55,9 @@ public class Home {
 	}
 	
 	//Welcome Message
+	System.out.println("----------------------------------------------------------------------");
 	System.out.println("Welcome to the homepage " + login.Username());
+	System.out.println("----------------------------------------------------------------------");
 	
 	//Add info from file into list
 	while(list.hasNext()) {
