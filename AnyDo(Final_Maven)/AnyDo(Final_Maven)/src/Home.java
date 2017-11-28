@@ -65,7 +65,7 @@ public class Home {
 	}
 	//list.close();
 	// user choice
-	System.out.println("Please select list to enter, or enter 'Add' to create an additional list or 'Delete' to remove a list");
+	System.out.println("To Add or Delete another enter 'Add' or 'Delete', to enter a list select a list to enter, or enter 'exit' to leave");
 	System.out.println(listNames);
 	ListChoice = input.next();
 	
