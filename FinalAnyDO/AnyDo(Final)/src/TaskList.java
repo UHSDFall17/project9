@@ -41,9 +41,9 @@ public class TaskList {
 	    PrintWriter printWriter2 = new PrintWriter(Buffer2);
 	    
 		//Scan in List and user input
-		Scanner list, input, check;
+		Scanner list, inputTaskList, check;
 		list = new Scanner(userInfo);
-		input = new Scanner(System.in);
+		inputTaskList = new Scanner(System.in);
 		check = new Scanner(userInfo);
 		
 		//initial print
@@ -65,14 +65,14 @@ public class TaskList {
 		// user choice
 		System.out.println("Please select list to enter, or enter 'Add' to create an additional task or 'Delete' to remove a task");
 		System.out.println(listTasks);
-		taskChoice = input.next();
+		taskChoice = inputTaskList.next();
 		
 		//Add list
 		while(taskChoice.equals("Add")) {
 			
 			String newTask;
 			System.out.println("Please select a name for task");
-			newTask = input.next();
+			newTask = inputTaskList.next();
 			if(taskChoice.equals("Add")) {
 				printWriter.println(newTask);
 				listTasks.add(newTask);
@@ -90,7 +90,7 @@ public class TaskList {
 				System.out.println(listNames);
 			}*/
 
-			taskChoice = input.next();	
+			taskChoice = inputTaskList.next();	
 		}
 		printWriter.flush();
 		printWriter.close();
@@ -109,3 +109,4 @@ public class TaskList {
 	}
 	
 }
+

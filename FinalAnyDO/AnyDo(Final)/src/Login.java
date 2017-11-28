@@ -8,8 +8,17 @@ public class Login{
     public static String LoginAttempt = "Login";
     public static void main(String[] args) throws IOException {
         
+    	Register register = new Register();
+    	
     	Scanner s1,s2;											//s1-Read , s2-Input
     	File temp = new File("src/userlogs.txt");
+    	
+    	if(temp.exists()==false) {
+        	temp.createNewFile();
+        	System.out.println("File has been created");
+        }
+        else { System.out.println("File userlogs exists"); }
+    	
         s1=new Scanner(temp);									// Read UserLog
         s2=new Scanner(System.in);
         
@@ -35,9 +44,18 @@ public class Login{
         	System.out.println("Incorrect password.");				//Return incorrect message
         	System.out.println("Please Enter 'Login' to try again or 'Register' to create a new account");
         	LoginAttempt=s2.next();
+          		while(!LoginAttempt.equals("Login") && !LoginAttempt.equals("Register") ) {
+                	System.out.println("Please Enter 'Login' to try again or 'Register' to create a new account");
+          		}
+        		if(LoginAttempt.equals("Register")) {
+        			register.main(null);
+        		}
+  
+        	
         	}
         	break;
         }
+
     }
     
     

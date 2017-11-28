@@ -37,7 +37,7 @@ public class TaskInfo {
 	    }
 		
 		// Setup Writer default
-		FileWriter writer = new FileWriter(userInfo);
+		FileWriter writer = new FileWriter(userInfo,true);
 	    BufferedWriter Buffer = new BufferedWriter(writer);
 	    PrintWriter printWriter = new PrintWriter(Buffer);
 		// Setup Writer initial
@@ -119,3 +119,4 @@ public class TaskInfo {
 	}
 	
 }
+
